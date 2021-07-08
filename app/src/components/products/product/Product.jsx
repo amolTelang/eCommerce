@@ -1,7 +1,13 @@
+//importing modules
 import React from 'react'
-import { Card,CardMedia,CardContent,CardActions,Typography,IconsButton } from '@material-ui/core';
+import { Card,CardMedia,CardContent,CardActions,Typography,IconButton } from '@material-ui/core';
 import {AddShoppingCart, CallMissedSharp} from '@material-ui/icons'
-const Product = ({products}) => {
+import useStyles from './styles';
+
+//component
+const Product = ({product}) => {
+    //hook for css
+    const classes=useStyles();
     return (
       <Card className={classes.root}>
           <CardMedia className={classes.root} image='' title={product.name}/>
@@ -14,7 +20,7 @@ const Product = ({products}) => {
                         {product.price}
                       </Typography>
                   </div>
-                  <Typography variant="h2" color="textSecondary">
+                  <Typography variant="body2" color="textSecondary">
                         {product.description}
                       </Typography>
               </CardContent>
