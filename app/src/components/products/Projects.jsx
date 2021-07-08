@@ -3,8 +3,10 @@ import React from 'react';
 import Grid from '@material-ui/core';
 
 const products=[
-  
-]
+  {id:1,name:'text',description:'text',price:21},
+  {id:2,name:'ext',description:'textx',price:121},
+
+];
 //component
 const Products=()=>{
     <main>
