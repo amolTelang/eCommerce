@@ -1,7 +1,7 @@
 //importing modules
 import React from 'react';
 import {Grid} from '@material-ui/core';
-import Product from './Product';
+import Product from './product/Product';
 
 const products=[
   {id:1,name:'text',description:'text',price:21},
